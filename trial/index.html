@@ -5,6 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Intutron — WhatsApp Appointment Automation for Clinics in Bengaluru</title>
   <meta name="description" content="Intutron sets up done-for-you WhatsApp appointment reminders, confirmations, reschedules and follow-ups for clinics in Bengaluru. Fewer missed appointments, less front-desk work." />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%230a0a0a'/><text x='16' y='23' text-anchor='middle' fill='%234F8EF7' font-family='sans-serif' font-weight='900' font-size='22'>I</text></svg>" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://intutron.com/" />
+  <meta property="og:title"       content="Intutron — WhatsApp Appointment Automation for Clinics in Bengaluru" />
+  <meta property="og:description" content="Done-for-you WhatsApp reminders, confirmations &amp; reschedules for Bengaluru clinics. Fewer missed appointments, less front-desk work." />
+  <meta property="og:image"       content="https://intutron.com/og.png" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Intutron — WhatsApp Appointment Automation for Clinics in Bengaluru" />
+  <meta name="twitter:description" content="Done-for-you WhatsApp reminders, confirmations &amp; reschedules for Bengaluru clinics." />
+  <meta name="twitter:image"       content="https://intutron.com/og.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -735,6 +754,106 @@
       .mobile-menu { padding-left: max(24px, env(safe-area-inset-left)); padding-right: max(24px, env(safe-area-inset-right)); padding-bottom: max(28px, env(safe-area-inset-bottom)); }
       footer { padding-bottom: max(48px, calc(24px + env(safe-area-inset-bottom))); }
     }
+
+    /* ============================================================
+       PRIVACY CALLOUT
+    ============================================================ */
+    .privacy-callout { padding: 24px 0; }
+    .privacy-inner {
+      display: flex; align-items: flex-start; gap: 12px;
+      background: rgba(79,142,247,0.05); border: 1px solid rgba(79,142,247,0.12);
+      border-radius: 12px; padding: 16px 20px; font-size: 13.5px;
+      color: var(--text-muted); line-height: 1.6;
+    }
+    .privacy-icon { flex-shrink: 0; font-size: 16px; margin-top: 1px; }
+
+    /* ============================================================
+       FOUNDER SECTION
+    ============================================================ */
+    #founder { padding: 120px 0; }
+    #founder::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 40% at 20% 50%, rgba(155,89,245,0.04) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .founder-layout { display: grid; grid-template-columns: 260px 1fr; gap: 80px; align-items: start; }
+
+    .founder-photo-wrap {
+      position: relative; border-radius: 20px; overflow: hidden;
+      background: #0d0d0d; border: 1px solid rgba(255,255,255,0.08);
+      aspect-ratio: 3/4; display: flex; align-items: center; justify-content: center;
+    }
+    .founder-photo-placeholder { width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; padding: 24px; }
+    .founder-photo-initials {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: linear-gradient(135deg, rgba(79,142,247,0.15), rgba(155,89,245,0.15));
+      border: 1px solid rgba(79,142,247,0.2);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; font-weight: 700; color: rgba(255,255,255,0.4);
+    }
+    .founder-photo-hint { font-size: 11px; color: var(--text-dim); text-align: center; letter-spacing: 0.04em; line-height: 1.5; }
+    .founder-badge {
+      position: absolute; bottom: 14px; left: 14px;
+      background: rgba(0,0,0,0.75); backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.1); border-radius: 8px;
+      padding: 5px 12px; font-size: 10px; font-weight: 600;
+      letter-spacing: 0.1em; color: var(--text-muted); text-transform: uppercase;
+    }
+
+    .founder-body { font-size: 16px; color: var(--text-muted); line-height: 1.75; margin-bottom: 16px; }
+    .founder-highlight {
+      display: flex; gap: 12px; align-items: flex-start;
+      background: rgba(79,142,247,0.05); border: 1px solid rgba(79,142,247,0.12);
+      border-radius: 10px; padding: 14px 16px; margin: 24px 0;
+      font-size: 14px; color: var(--text-muted); line-height: 1.6;
+    }
+    .founder-highlight-icon { color: var(--accent); flex-shrink: 0; font-size: 15px; margin-top: 1px; }
+    .founder-sig { margin-top: 28px; display: flex; flex-direction: column; gap: 4px; border-top: 1px solid rgba(255,255,255,0.06); padding-top: 24px; }
+    .founder-name { font-size: 18px; font-weight: 700; color: var(--text-primary); letter-spacing: -0.02em; }
+    .founder-role { font-size: 13px; color: var(--text-dim); }
+
+    /* ============================================================
+       FAQ SECTION
+    ============================================================ */
+    #faq { padding: 120px 0; }
+    .faq-list { margin-top: 48px; display: flex; flex-direction: column; gap: 10px; max-width: 800px; }
+    .faq-item {
+      background: #0d0d0d; border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 14px; overflow: hidden; transition: border-color 0.2s ease;
+    }
+    .faq-item[open] { border-color: rgba(79,142,247,0.22); }
+    .faq-q {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 20px 24px; cursor: pointer; font-size: 15px; font-weight: 600;
+      color: var(--text-primary); list-style: none; letter-spacing: -0.01em;
+      user-select: none; gap: 16px;
+    }
+    .faq-q::-webkit-details-marker { display: none; }
+    .faq-chevron {
+      width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0;
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 11px; color: var(--text-dim); transition: transform 0.25s ease, background 0.2s ease;
+    }
+    .faq-item[open] .faq-chevron { transform: rotate(180deg); background: rgba(79,142,247,0.1); color: var(--accent); }
+    .faq-a {
+      padding: 0 24px 20px; font-size: 14.5px; color: var(--text-muted);
+      line-height: 1.7; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 16px;
+    }
+
+    /* extend existing mobile rules */
+    @media (max-width: 768px) {
+      #founder, #faq { padding: 80px 0; }
+      .founder-layout { grid-template-columns: 1fr; gap: 32px; }
+      .founder-photo-wrap { max-width: 180px; aspect-ratio: 1/1; border-radius: 50%; }
+      .founder-photo-placeholder { border-radius: 50%; }
+      .faq-q { padding: 16px 18px; font-size: 14px; }
+      .faq-a { padding: 0 18px 16px; padding-top: 14px; font-size: 14px; }
+      .privacy-inner { font-size: 13px; }
+    }
+    @media (max-width: 480px) {
+      .faq-q { font-size: 13.5px; }
+    }
   </style>
 </head>
 <body>
@@ -754,6 +873,8 @@
         <li><a href="#problem">The Problem</a></li>
         <li><a href="#demo">Live Demo</a></li>
         <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#founder">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
 
@@ -777,6 +898,8 @@
     <a href="#solution" onclick="closeMobileMenu()">The Solution</a>
     <a href="#demo"     onclick="closeMobileMenu()">Live Demo</a>
     <a href="#pricing"  onclick="closeMobileMenu()">Pricing</a>
+    <a href="#founder"  onclick="closeMobileMenu()">About</a>
+    <a href="#faq"      onclick="closeMobileMenu()">FAQ</a>
     <a href="#contact"  onclick="closeMobileMenu()">Contact</a>
     <a href="#contact" class="mobile-cta-link" onclick="closeMobileMenu()">Book a free demo</a>
   </div>
@@ -860,6 +983,7 @@
         <li class="process-bento-item fade-up delay-3">
           <div class="process-glow-border"></div>
           <div class="process-bento-inner" data-num="03">
+            <div class="process-bento-num">03</div>
             <div class="process-bento-icon">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <rect x="3" y="4" width="14" height="12" rx="2" stroke="#4F8EF7" stroke-width="1.5"/>
@@ -875,6 +999,7 @@
         <li class="process-bento-item fade-up delay-4">
           <div class="process-glow-border"></div>
           <div class="process-bento-inner" data-num="04">
+            <div class="process-bento-num">04</div>
             <div class="process-bento-icon" style="background:rgba(251,191,36,0.08);border-color:rgba(251,191,36,0.18);">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                 <circle cx="10" cy="10" r="7" stroke="#FBBF24" stroke-width="1.5"/>
@@ -1102,6 +1227,18 @@
     </div>
   </section>
 
+  <!-- ================================================================
+       PRIVACY CALLOUT
+  ================================================================ -->
+  <div class="section-inner" style="padding-top:32px;padding-bottom:0;">
+    <div class="privacy-callout">
+      <div class="privacy-inner fade-up">
+        <span class="privacy-icon">🔒</span>
+        <span><strong style="color:var(--text-primary);font-weight:600;">Patient data never leaves your systems.</strong> Intutron is conscious of India's DPDP Act — we don't store, sell, or misuse patient information. Your data, your clinic, your control.</span>
+      </div>
+    </div>
+  </div>
+
   <div class="section-divider"><div class="section-divider-line"></div></div>
 
   <!-- ================================================================
@@ -1235,6 +1372,137 @@
   <div class="section-divider"><div class="section-divider-line"></div></div>
 
   <!-- ================================================================
+       FOUNDER
+  ================================================================ -->
+  <section id="founder">
+    <div class="section-inner">
+      <div class="founder-layout">
+
+        <div class="founder-photo-col fade-up">
+          <div class="founder-photo-wrap">
+            <!-- TODO: replace this placeholder with your actual photo.
+                 Drop a square JPG here: <img src="your-photo.jpg" alt="Founder" style="width:100%;height:100%;object-fit:cover;" />
+                 Then delete the .founder-photo-placeholder div below. -->
+            <div class="founder-photo-placeholder">
+              <div class="founder-photo-initials">IN</div>
+              <p class="founder-photo-hint">Add your photo here</p>
+            </div>
+            <div class="founder-badge">Founder</div>
+          </div>
+        </div>
+
+        <div class="founder-text-col">
+          <div class="section-header fade-up" style="margin-bottom:24px;">
+            <span class="label">Who's behind this</span>
+            <!-- TODO: update headline if you like -->
+            <h2 class="section-title">Set up personally.<br />Not outsourced.</h2>
+          </div>
+
+          <!-- TODO: replace [Your Name] and edit this copy to match your story -->
+          <p class="founder-body fade-up delay-1">
+            I'm <strong style="color:var(--text-primary)">[Your Name]</strong>, the founder of Intutron. I started this because I kept seeing Bengaluru clinic owners dealing with the same problem — patients forgetting appointments, staff spending half their day on follow-up calls, and no clean system to fix it.
+          </p>
+          <p class="founder-body fade-up delay-2">
+            Intutron is not a SaaS platform you log into. When you sign up, I personally audit your clinic's patient flow, build the automation for your specific setup, train your staff, and stay available every month. Nothing is handed off to a freelancer or a template.
+          </p>
+
+          <div class="founder-highlight fade-up delay-3">
+            <span class="founder-highlight-icon">→</span>
+            <span>Every clinic is different. I spend time understanding yours before a single message is written.</span>
+          </div>
+
+          <div class="founder-sig fade-up delay-4">
+            <!-- TODO: replace [Your Name] with your real name -->
+            <span class="founder-name">[Your Name]</span>
+            <span class="founder-role">Founder, Intutron · Bengaluru</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><div class="section-divider-line"></div></div>
+
+  <!-- ================================================================
+       FAQ
+  ================================================================ -->
+  <section id="faq">
+    <div class="section-inner">
+      <div class="section-header fade-up">
+        <span class="label">FAQ</span>
+        <h2 class="section-title">Questions clinic owners ask.</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <details class="faq-item fade-up delay-1">
+          <summary class="faq-q">
+            Is my patients' data safe?
+            <span class="faq-chevron">↓</span>
+          </summary>
+          <div class="faq-a">
+            Yes. Patient data stays inside your own systems — your WhatsApp Business account, your Google Sheet, your booking software. Intutron sets up the automation flows and connects them, but we do not store patient names, phone numbers, or appointment details on our servers. We are conscious of India's Digital Personal Data Protection (DPDP) Act and build our systems accordingly. We do not sell, share, or misuse any data from your clinic.
+          </div>
+        </details>
+
+        <details class="faq-item fade-up delay-2">
+          <summary class="faq-q">
+            How long does setup take?
+            <span class="faq-chevron">↓</span>
+          </summary>
+          <div class="faq-a">
+            14 days or less from the date you share your clinic's details. The first week is setup and testing, the second week is staff training and a live trial run. You won't go live until you're happy with how it works.
+          </div>
+        </details>
+
+        <details class="faq-item fade-up delay-3">
+          <summary class="faq-q">
+            What are the real ongoing costs — no surprises?
+            <span class="faq-chevron">↓</span>
+          </summary>
+          <div class="faq-a">
+            You pay Intutron's monthly retainer (₹3,999–₹9,999 depending on your plan). Separately, WhatsApp Business API access and Meta's per-message fees are billed directly by Meta or the BSP (Business Solution Provider) you use — Intutron does not mark these up or take a cut. Most clinics spend ₹500–₹1,500/month on Meta fees depending on message volume.
+          </div>
+        </details>
+
+        <details class="faq-item fade-up delay-4">
+          <summary class="faq-q">
+            What if something breaks or a flow stops working?
+            <span class="faq-chevron">↓</span>
+          </summary>
+          <div class="faq-a">
+            Monthly support is included in all plans. If a flow breaks, a template gets rejected by Meta, or something behaves unexpectedly, you message me and I fix it. For Beta and Growth plans this is covered in the retainer. Most issues are resolved within 24 hours.
+          </div>
+        </details>
+
+        <details class="faq-item fade-up delay-5">
+          <summary class="faq-q">
+            Do I need to learn any software or tool?
+            <span class="faq-chevron">↓</span>
+          </summary>
+          <div class="faq-a">
+            No. You don't need to touch Wati, AiSensy, WABA, or any platform directly. Intutron handles all of that. Your staff only needs to know: check the Google Sheet for daily confirmations and reschedules. That's it. If your staff can use WhatsApp, they're already qualified.
+          </div>
+        </details>
+
+        <details class="faq-item fade-up delay-6">
+          <summary class="faq-q">
+            What if I want to stop after a few months?
+            <span class="faq-chevron">↓</span>
+          </summary>
+          <div class="faq-a">
+            The Beta Clinic Partner plan has no long-term lock-in. Cancel anytime with 30 days notice. You keep your WhatsApp Business account and any templates that were approved by Meta — those belong to you. Growth and Premium plans may have a 3-month minimum given the higher setup investment; this will be clearly stated in your agreement before you sign.
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"><div class="section-divider-line"></div></div>
+
+  <!-- ================================================================
        CONTACT
   ================================================================ -->
   <section id="contact">
@@ -1321,6 +1589,8 @@
         <li><a href="#problem">The Problem</a></li>
         <li><a href="#demo">Demo</a></li>
         <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#founder">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <span class="footer-copy">&copy; 2025 Intutron. All rights reserved.</span>
@@ -1331,6 +1601,15 @@
        JAVASCRIPT
   ================================================================ -->
   <script>
+    // ---------------------------------------------------------------
+    // CONFIG — edit these two values before going live
+    // ---------------------------------------------------------------
+    // TODO: replace with your real WhatsApp number (country code + number, no +, no spaces)
+    const WHATSAPP_NUMBER = '91XXXXXXXXXX';
+
+    // TODO: get your free access key from https://web3forms.com — enter your email, they send you a key
+    const WEB3FORMS_KEY = 'YOUR_ACCESS_KEY';
+
     // ---------------------------------------------------------------
     // PAGE LOAD
     // ---------------------------------------------------------------
@@ -1610,25 +1889,43 @@
     }
 
     // ---------------------------------------------------------------
-    // CONTACT FORM — POST /api/contact
+    // WHATSAPP BUTTON — set href from config constant
+    // ---------------------------------------------------------------
+    document.querySelectorAll('.wa-cta-btn').forEach(a => {
+      a.href = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=Hi%2C%20I%27d%20like%20to%20book%20a%20free%20demo%20for%20my%20clinic.';
+    });
+
+    // ---------------------------------------------------------------
+    // CONTACT FORM — Web3Forms (no backend needed)
+    // Sign up at https://web3forms.com to get your access key
     // ---------------------------------------------------------------
     async function submitContact(e) {
       e.preventDefault();
       const btn = document.getElementById('contactSubmit');
       btn.textContent = 'Sending…'; btn.disabled = true;
-      const data = {
-        clinic:   document.getElementById('contactClinic').value.trim(),
-        person:   document.getElementById('contactPerson').value.trim(),
-        phone:    document.getElementById('contactPhone').value.trim(),
-        message:  document.getElementById('contactMessage').value.trim(),
+      const clinic = document.getElementById('contactClinic').value.trim();
+      const payload = {
+        access_key: WEB3FORMS_KEY,
+        subject: 'New demo request — ' + clinic,
+        from_name: 'Intutron Website',
+        clinic,
+        person:  document.getElementById('contactPerson').value.trim(),
+        phone:   document.getElementById('contactPhone').value.trim(),
+        message: document.getElementById('contactMessage').value.trim(),
       };
       try {
-        const res = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
-        if (!res.ok) throw new Error();
+        const res = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        const json = await res.json();
+        if (!json.success) throw new Error(json.message || 'failed');
         document.getElementById('contactFormEl').style.display = 'none';
         document.getElementById('contactSuccess').style.display = 'block';
       } catch {
         btn.textContent = 'Send message →'; btn.disabled = false;
+        alert('Could not send — please use the WhatsApp button below to reach us directly.');
       }
     }
 
