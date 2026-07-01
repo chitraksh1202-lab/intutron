@@ -439,6 +439,8 @@
     .pricing-cta-primary:hover { opacity: 0.88; }
     .pricing-cta-ghost { background: transparent; border: 0.5px solid rgba(240,235,225,0.15); color: var(--text-primary); }
     .pricing-cta-ghost:hover { border-color: rgba(240,235,225,0.3); }
+    .pricing-solo-wrap { max-width: 640px; }
+    .pricing-founder-body { font-size: 15px; color: var(--text-muted); line-height: 1.78; margin: 16px 0 32px; }
 
     /* ============================================================
        NOT INCLUDED
@@ -451,10 +453,10 @@
       border: 0.5px solid var(--card-border); border-radius: 10px;
     }
     .ni-x {
-      width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0;
-      background: rgba(240,235,225,0.04); border: 0.5px solid rgba(240,235,225,0.1);
+      width: 22px; height: 22px; border-radius: 50%; flex-shrink: 0;
+      background: rgba(196,154,108,0.08); border: 0.5px solid rgba(196,154,108,0.22);
       display: flex; align-items: center; justify-content: center;
-      font-size: 10px; color: var(--text-dim); font-weight: 500; line-height: 1;
+      font-size: 11px; color: var(--accent); font-weight: 400; line-height: 1;
     }
     .ni-text { font-size: 13.5px; color: var(--text-muted); line-height: 1.55; }
 
@@ -1095,20 +1097,17 @@
   <section id="pricing">
     <div class="section-inner">
       <div class="section-header fade-up">
-        <span class="label">Packages</span>
-        <h2 class="section-title">Simple, transparent pricing.<br />No hidden costs.</h2>
+        <span class="label">Founder Pricing</span>
+        <h2 class="section-title">First 3 clinics.<br /><em style="font-style:italic;">Special terms.</em></h2>
       </div>
 
-      <div class="pricing-grid">
-
-        <div class="pricing-card featured fade-up delay-1">
-          <div class="pricing-badge beta">First 3 clinics only</div>
-          <div class="pricing-name">Beta Clinic Partner</div>
-          <div class="pricing-tagline">Best for clinics starting out</div>
-          <div class="pricing-price-block">
-            <div class="pricing-setup"><strong>₹12,999</strong> one-time setup</div>
-            <div class="pricing-monthly">then <strong>₹3,999</strong> / month</div>
-          </div>
+      <div class="pricing-solo-wrap fade-up delay-1">
+        <div class="pricing-card featured">
+          <div class="pricing-badge beta">3 spots · Bengaluru only</div>
+          <div class="pricing-name">Founder pricing — first 3 clinics</div>
+          <p class="pricing-founder-body">
+            I'm partnering with the first 3 Bengaluru clinics at special founder pricing, in exchange for feedback and a testimonial.
+          </p>
           <ul class="pricing-features">
             <li>Appointment reminder flow</li>
             <li>Confirm / reschedule flow</li>
@@ -1116,102 +1115,47 @@
             <li>Basic enquiry auto-reply</li>
             <li>Front-desk Google Sheet dashboard</li>
             <li>Staff handover &amp; training</li>
-            <li>14 days setup support</li>
+            <li>Ongoing monthly support</li>
           </ul>
-          <a href="#contact" class="pricing-cta pricing-cta-primary">Get started →</a>
+          <a href="#contact" class="pricing-cta pricing-cta-primary">
+            Book a free demo to see if your clinic qualifies →
+          </a>
         </div>
-
-        <div class="pricing-card fade-up delay-2">
-          <div class="pricing-badge growth">Growth Plan</div>
-          <div class="pricing-name">Growth</div>
-          <div class="pricing-tagline">For clinics ready to scale</div>
-          <div class="pricing-price-block">
-            <div class="pricing-setup"><strong>₹24,999</strong> one-time setup</div>
-            <div class="pricing-monthly">then <strong>₹6,999</strong> / month</div>
-          </div>
-          <ul class="pricing-features">
-            <li class="inherited">Everything in Beta, plus:</li>
-            <li>Review request flow</li>
-            <li>Monthly system check</li>
-            <li>Up to 4 flow changes per month</li>
-            <li>Monthly performance report</li>
-            <li>30 days ongoing support</li>
-          </ul>
-          <a href="#contact" class="pricing-cta pricing-cta-ghost">Get started →</a>
-        </div>
-
-        <div class="pricing-card fade-up delay-3">
-          <div class="pricing-badge premium">Premium</div>
-          <div class="pricing-name">Premium</div>
-          <div class="pricing-tagline">Multi-doctor clinics &amp; hospitals</div>
-          <div class="pricing-price-block">
-            <div class="pricing-setup"><strong>₹39,999+</strong> one-time setup</div>
-            <div class="pricing-monthly">then <strong>₹9,999</strong> / month</div>
-          </div>
-          <ul class="pricing-features">
-            <li class="inherited">Everything in Growth, plus:</li>
-            <li>Multiple doctors / departments</li>
-            <li>Advanced routing &amp; triage flows</li>
-            <li>More message templates</li>
-            <li>Report-ready notification flow</li>
-            <li>Enhanced dashboard</li>
-            <li>Staff training session</li>
-            <li>Priority support</li>
-          </ul>
-          <a href="#contact" class="pricing-cta pricing-cta-ghost">Get started →</a>
-        </div>
-
       </div>
-
-      <p class="fade-up" style="text-align:center; margin-top:36px; font-size:13px; color:var(--text-dim);">
-        WhatsApp Business API access and Meta message fees are billed separately by Meta. Intutron does not mark these up.
-      </p>
     </div>
   </section>
 
   <div class="section-divider"><div class="section-divider-line"></div></div>
 
   <!-- ================================================================
-       NOT INCLUDED
+       HOW WE WORK
   ================================================================ -->
   <section id="not-included">
     <div class="section-inner">
       <div class="section-header fade-up" style="max-width:640px;">
-        <span class="label">Transparency</span>
-        <h2 class="section-title">What's not included.</h2>
+        <span class="label">Good to know</span>
+        <h2 class="section-title">How we work.</h2>
         <p class="section-body">
-          We believe in being upfront. Here's what Intutron doesn't do — so there are no surprises after you sign up.
+          A few things worth knowing before we speak — so there are no surprises and you can focus on the right questions.
         </p>
       </div>
 
       <div class="ni-grid">
         <div class="ni-item fade-up delay-1">
-          <div class="ni-x">✕</div>
-          <div class="ni-text">No medical advice or clinical decision-making of any kind</div>
+          <div class="ni-x">→</div>
+          <div class="ni-text">Intutron works alongside your front desk — freeing up staff time, not replacing anyone.</div>
         </div>
         <div class="ni-item fade-up delay-2">
-          <div class="ni-x">✕</div>
-          <div class="ni-text">We don't replace your receptionist — we free up their time</div>
+          <div class="ni-x">→</div>
+          <div class="ni-text">WhatsApp &amp; Meta message fees are billed directly by Meta — we never mark them up.</div>
         </div>
         <div class="ni-item fade-up delay-3">
-          <div class="ni-x">✕</div>
-          <div class="ni-text">We don't manually reply to every individual patient message</div>
+          <div class="ni-x">→</div>
+          <div class="ni-text">You provide your appointment data; we handle everything technical.</div>
         </div>
         <div class="ni-item fade-up delay-4">
-          <div class="ni-x">✕</div>
-          <div class="ni-text">No guaranteed percentage reduction in no-shows</div>
-        </div>
-        <div class="ni-item fade-up delay-5">
-          <div class="ni-x">✕</div>
-          <div class="ni-text">WhatsApp platform &amp; Meta message fees are billed separately</div>
-        </div>
-        <div class="ni-item fade-up delay-6">
-          <div class="ni-x">✕</div>
-          <div class="ni-text">Client must provide accurate, up-to-date appointment data</div>
-        </div>
-        <div class="ni-item fade-up delay-1">
-          <div class="ni-x">✕</div>
-          <div class="ni-text">Report or prescription delivery not in Beta unless agreed separately</div>
+          <div class="ni-x">→</div>
+          <div class="ni-text">We focus on appointment communication — no medical or clinical advice.</div>
         </div>
       </div>
     </div>
