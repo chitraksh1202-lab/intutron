@@ -38,7 +38,7 @@
       --bg:           #0E0C0A;
       --bg-secondary: #131109;
       --text-primary: #F0EBE1;
-      --text-muted:   #847C72;
+      --text-muted:   #A09590;
       --text-dim:     #4A4540;
       --accent:       #C49A6C;
       --border:       rgba(240, 235, 225, 0.08);
@@ -166,21 +166,21 @@
 
     .hero-label {
       display: inline-flex; align-items: center; gap: 9px;
-      margin-bottom: 36px; padding: 7px 18px;
-      background: rgba(196,154,108,0.06); border: 0.5px solid rgba(196,154,108,0.22);
-      border-radius: 100px; font-size: 10.5px; font-weight: 500;
-      letter-spacing: 0.16em; text-transform: uppercase; color: var(--accent);
+      margin-bottom: 28px; padding: 9px 22px;
+      background: rgba(196,154,108,0.09); border: 0.5px solid rgba(196,154,108,0.35);
+      border-radius: 100px; font-size: 11.5px; font-weight: 500;
+      letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent);
     }
     .hero-label::before {
       content: ''; width: 5px; height: 5px; background: var(--accent);
-      border-radius: 50%; opacity: 0.8; flex-shrink: 0;
+      border-radius: 50%; flex-shrink: 0;
     }
 
     .hero-headline {
       font-family: 'Fraunces', Georgia, serif;
       font-size: clamp(52px, 8.5vw, 108px); font-weight: 300;
       line-height: 1.02; letter-spacing: -0.03em;
-      margin-bottom: 32px; color: var(--text-primary);
+      margin-bottom: 22px; color: var(--text-primary);
     }
     .hero-headline em {
       font-style: italic; color: var(--accent);
@@ -188,7 +188,7 @@
 
     .hero-sub {
       font-size: clamp(16px, 1.6vw, 19px); color: var(--text-muted);
-      max-width: 560px; margin: 0 auto 52px;
+      max-width: 560px; margin: 0 auto 38px;
       line-height: 1.75; font-weight: 300;
     }
 
@@ -262,19 +262,15 @@
     .process-bento-item:hover .process-bento-inner {
       border-color: rgba(196,154,108,0.18);
     }
-    .process-bento-inner::before {
-      content: attr(data-num); position: absolute; right: 20px; top: 4px;
-      font-family: 'Fraunces', Georgia, serif;
-      font-size: 120px; font-weight: 300; color: rgba(240,235,225,0.025);
-      line-height: 1; letter-spacing: -0.04em; pointer-events: none; user-select: none;
-    }
+    .process-bento-inner::before { display: none; }
 
     .process-bento-num { font-size: 10px; font-weight: 500; letter-spacing: 0.16em; color: var(--accent); }
     .process-bento-icon {
       width: 40px; height: 40px; border-radius: 10px;
-      background: rgba(196,154,108,0.07); border: 0.5px solid rgba(196,154,108,0.18);
+      background: rgba(196,154,108,0.13); border: 0.5px solid rgba(196,154,108,0.3);
       display: flex; align-items: center; justify-content: center;
     }
+    .process-bento-icon svg { width: 20px; height: 20px; }
     .process-bento-title {
       font-family: 'Fraunces', Georgia, serif;
       font-size: 22px; font-weight: 300; color: var(--text-primary);
@@ -659,10 +655,12 @@
       .section-inner { padding: 0 22px; }
       .footer-inner  { padding: 0 22px; }
       .section-divider { padding: 0 22px; }
-      #hero { padding: 140px 22px 110px; min-height: 100svh; }
-      .hero-headline { font-size: clamp(42px, 10vw, 68px); letter-spacing: -0.025em; margin-bottom: 24px; }
-      #problem, #solution, #demo, #pricing, #not-included, #founder, #faq, #contact { padding: 100px 0; }
-      .section-header { margin-bottom: 48px; }
+      #hero { padding: 130px 22px 80px; min-height: 100svh; }
+      .hero-label { margin-bottom: 22px; padding: 8px 18px; font-size: 11px; }
+      .hero-headline { font-size: clamp(42px, 10vw, 68px); letter-spacing: -0.025em; margin-bottom: 18px; }
+      .hero-sub { margin-bottom: 30px; }
+      #problem, #solution, #demo, #pricing, #not-included, #founder, #faq, #contact { padding: 88px 0; }
+      .section-header { margin-bottom: 44px; }
       .process-bento { grid-template-columns: 1fr; }
       .solution-grid { grid-template-columns: 1fr; }
       .pricing-grid  { grid-template-columns: 1fr; }
@@ -682,7 +680,7 @@
       .section-inner { padding: 0 18px; }
       .footer-inner  { padding: 0 18px; }
       .section-divider { padding: 0 18px; }
-      #hero { padding: 120px 18px 90px; }
+      #hero { padding: 110px 18px 70px; }
       .hero-headline { font-size: clamp(38px, 11vw, 52px); letter-spacing: -0.02em; }
       .hero-ctas { flex-direction: column; align-items: stretch; }
       .btn-primary, .btn-ghost { justify-content: center; }
